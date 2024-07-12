@@ -538,7 +538,7 @@ function saveEvents() {
 }
 
 function getEvents() {
-    if (localStorage.getItem("events" === null)) {
+    if (localStorage.getItem("events") === null) {
         return;
     }
     eventsArr.push(...JSON.parse(localStorage.getItem("events")));
